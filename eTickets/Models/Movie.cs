@@ -4,11 +4,12 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
-using System.ComponentModel.DataAnnotations.Schema;
+using System.Threading.Tasks;
+
 namespace eTickets.Models
 {
-	public class Movie
-	{
+    public class Movie
+    {
         [Key]
         public int Id { get; set; }
 
@@ -19,7 +20,6 @@ namespace eTickets.Models
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
         public MovieCategory MovieCategory { get; set; }
-
 
         //Relationships
         public List<Actor_Movie> Actors_Movies { get; set; }
@@ -35,4 +35,3 @@ namespace eTickets.Models
         public Producer Producer { get; set; }
     }
 }
-

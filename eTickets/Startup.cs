@@ -1,4 +1,4 @@
-﻿using eTickets.Data;
+using eTickets.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -27,7 +27,7 @@ namespace eTickets
         {
 
             //DbContext configuration
-            services.AddDbContext<AppDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("Default")));
+            services.AddDbContext<AppDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnectionString")));
 
             services.AddControllersWithViews();
         }

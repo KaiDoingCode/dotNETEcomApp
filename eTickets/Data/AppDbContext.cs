@@ -1,19 +1,17 @@
 ﻿using eTickets.Models;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Options;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
+using System.Threading.Tasks;
+
 namespace eTickets.Data
 {
-	public class AppDbContext : DbContext
+    public class AppDbContext:DbContext
     {
-		public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
+        public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
         {
-
-		}
+        }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -34,7 +32,6 @@ namespace eTickets.Data
         public DbSet<Movie> Movies { get; set; }
         public DbSet<Actor_Movie> Actors_Movies { get; set; }
         public DbSet<Cinema> Cinemas { get; set; }
-        public DbSet<Producer> Prducers { get; set; }
+        public DbSet<Producer> Producers { get; set; }
     }
 }
-
