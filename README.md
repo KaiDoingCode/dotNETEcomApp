@@ -2,7 +2,7 @@
 
 This is the source code of the ecom application using ASP.NET MVC and Entity Framework Core
 
-This application would be deployed to Azure and the preview link would be updated below
+This application would be deployed to Azure and the preview link would be updated below when the development is completed.
 📌 Preview link: 
 
 # Technology
@@ -18,3 +18,4 @@ This application use the following technology:
 
 # How to run them from your computer
 You can open the eTickets.sln on Visual Studio and run the source code directly from your computer
+The app is still in development and is still being updated.
