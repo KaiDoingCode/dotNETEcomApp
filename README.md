@@ -18,4 +18,12 @@ This application use the following technology:
 
 # How to run them from your computer
 You can open the eTickets.sln on Visual Studio and run the source code directly from your computer
+
+* Clone the repo
+
+* Click the eTickets.sln file to open it in Visual Studio GUI
+
+* Install dependencies
+
+* Choose Debug > Start with debugging from the Visual Studio menu,
 The app is still in development and is still being updated.
