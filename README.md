@@ -25,7 +25,15 @@ You can open the eTickets.sln on Visual Studio and run the source code directly 
 
 * Install dependencies
 
-* Choose Debug > Start with debugging from the Visual Studio menu.
+* Navigate into the eTickets folder `cd eTickets`
+
+* Run `dotnet run` to build the project locally
 
 # Notes
-The app is still in development and is still being updated. The finished preview link and final project would be updated in the latest time.
+* The connection string may vary based on the OS of your computer. If you use Windows and use MySQL database management rather than docker image, then change the connectionstring into
+
+```
+"DefaultConnectionString": "Data Source=etr\\sqlserver;Initial Catalog=ecommerce-app-db;Integrated Security=True;Pooling=False"
+```
+
+* The app is still in development and is still being updated. The finished preview link and final project would be updated in the latest time.
