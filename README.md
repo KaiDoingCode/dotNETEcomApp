@@ -25,5 +25,7 @@ You can open the eTickets.sln on Visual Studio and run the source code directly 
 
 * Install dependencies
 
-* Choose Debug > Start with debugging from the Visual Studio menu,
-The app is still in development and is still being updated.
+* Choose Debug > Start with debugging from the Visual Studio menu.
+
+# Notes
+The app is still in development and is still being updated. The finished preview link and final project would be updated in the latest time.
