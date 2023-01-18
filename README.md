@@ -29,6 +29,9 @@ You can open the eTickets.sln on Visual Studio and run the source code directly 
 
 * Run `dotnet run` to build the project locally
 
+* Open `https://localhost:5001/movies` open your browser to view the homepage of the project on your local machine
+
+
 # Notes
 * The connection string may vary based on the OS of your computer. If you use Windows and use MySQL database management rather than docker image, then change the connectionstring into
 
