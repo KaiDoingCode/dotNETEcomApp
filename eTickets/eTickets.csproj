@@ -15,8 +15,14 @@
 
   <ItemGroup>
     <None Remove="Views\Actors\" />
+    <None Remove="Views\Producers\" />
+    <None Remove="Views\Cinemas\" />
+    <None Remove="Views\Movies\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\Actors\" />
+    <Folder Include="Views\Producers\" />
+    <Folder Include="Views\Cinemas\" />
+    <Folder Include="Views\Movies\" />
   </ItemGroup>
 </Project>
