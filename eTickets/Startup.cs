@@ -28,8 +28,9 @@ namespace eTickets
         {
 
             //DbContext configuration
-            services.AddDbContext<AppDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnectionString")));
+            services.AddDbContext<AppDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("Default")));
 
+            //Services configuration
             services.AddScoped<IActorsService, ActorsService>();
 
             services.AddControllersWithViews();
@@ -62,6 +63,7 @@ namespace eTickets
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });
 
+            //Seed database
             AppDbInitializer.Seed(app);
         }
     }

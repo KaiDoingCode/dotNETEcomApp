@@ -13,18 +13,4 @@
     </PackageReference>
   </ItemGroup>
 
-  <ItemGroup>
-    <None Remove="Views\Actors\" />
-    <None Remove="Views\Producers\" />
-    <None Remove="Views\Cinemas\" />
-    <None Remove="Views\Movies\" />
-    <None Remove="Data\Services\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Views\Actors\" />
-    <Folder Include="Views\Producers\" />
-    <Folder Include="Views\Cinemas\" />
-    <Folder Include="Views\Movies\" />
-    <Folder Include="Data\Services\" />
-  </ItemGroup>
 </Project>
