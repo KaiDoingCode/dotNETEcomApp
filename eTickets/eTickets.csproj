@@ -13,4 +13,10 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <None Remove="Views\Actors\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\Actors\" />
+  </ItemGroup>
 </Project>
