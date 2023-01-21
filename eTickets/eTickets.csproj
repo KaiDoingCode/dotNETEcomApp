@@ -13,4 +13,10 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <None Remove="Data\Base\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Data\Base\" />
+  </ItemGroup>
 </Project>
