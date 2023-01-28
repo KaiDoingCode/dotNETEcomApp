@@ -3,7 +3,8 @@
 This is the source code of the ecom application using ASP.NET MVC and Entity Framework Core
 
 This application would be deployed to Azure and the preview link would be updated below when the development is completed.
-📌 Preview link: 
+
+📌 Preview link: https://etickets-app-demo.azurewebsites.net
 
 # Technology
 This application use the following technology:
