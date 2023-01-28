@@ -26,18 +26,20 @@ You can open the eTickets.sln on Visual Studio and run the source code directly 
 
 * Install dependencies
 
+* Install Docker
+
+* Run this command in your Terminal/Ubuntu to initialize your local SQL database via Docker
+
+```
+sudo docker run --cap-add SYS_PTRACE -e 'ACCEPT_EULA=1' -e 'MSSQL_SA_PASSWORD=Strong.Pwd-123' -p 1433:1433 --name ecommerce_app_db -d mcr.microsoft.com/azure-sql-edge
+```
+
 * Navigate into the eTickets folder `cd eTickets`
 
 * Run `dotnet run` to build the project locally
 
-* Open `https://localhost:5001/movies` open your browser to view the homepage of the project on your local machine
+* Open `https://localhost:5001` on your browser to view the homepage of the project on your local machine
 
 
-# Notes
-* The connection string may vary based on the OS of your computer. If you use Windows and use MySQL database management rather than docker image, then change the connectionstring into
 
-```
-"DefaultConnectionString": "Data Source=etr\\sqlserver;Initial Catalog=ecommerce-app-db;Integrated Security=True;Pooling=False"
-```
 
-* The app is still in development and is still being updated. The finished preview link and final project would be updated in the latest time.
