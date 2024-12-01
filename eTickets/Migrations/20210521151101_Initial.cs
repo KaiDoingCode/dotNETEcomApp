@@ -38,7 +38,7 @@ namespace eTickets.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Producers",
+                name: "Prducers",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
@@ -49,7 +49,7 @@ namespace eTickets.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Producers", x => x.Id);
+                    table.PrimaryKey("PK_Prducers", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -78,9 +78,9 @@ namespace eTickets.Migrations
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_Movies_Producers_ProducerId",
+                        name: "FK_Movies_Prducers_ProducerId",
                         column: x => x.ProducerId,
-                        principalTable: "Producers",
+                        principalTable: "Prducers",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -140,7 +140,7 @@ namespace eTickets.Migrations
                 name: "Cinemas");
 
             migrationBuilder.DropTable(
-                name: "Producers");
+                name: "Prducers");
         }
     }
 }

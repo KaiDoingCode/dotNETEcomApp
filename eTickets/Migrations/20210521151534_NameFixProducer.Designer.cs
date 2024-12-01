@@ -10,8 +10,8 @@ using eTickets.Data;
 namespace eTickets.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20221110140750_Initial")]
-    partial class Initial
+    [Migration("20210521151534_NameFixProducer")]
+    partial class NameFixProducer
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
